@@ -1,0 +1,301 @@
+Message,isRefactoring
+Ongoing repair unit tests,0
+core: Stateful VM Pools implementation,0
+UTGgraph updates,0
+Test Case for new validator,0
+allow generation of .xml.gz files,0
+Update StaticBlockService.java,0
+checboxes are showing selectively records chart completed,0
+Updated reference to package containing test workflows in restflow project.,0
+implemented some api,0
+AccessoryBean + accessory.xhtml,0
+Flattened admin/department sub packages into single package,0
+synchronize with local CVS,0
+OPENNLP500: Each ToolFactory now uses the ExtensionLoader to instantiate subclasses and implements a protected init method that takes the required arguments. To make it easier to instantiate the tool factory from api we kept the constructor that takes the same arguments internally it calls the init method.,0
+storing type information as specified (SPR5556 SPR5562); explicit XML array element in springbeans3.0.xsd (SPR5543),0
+Progress on Data Model Evolution,0
+Implementation of Issue #1843 but some tests are still failed.,0
+Mavenized OpenWarp,0
+configure topology done,0
+KARAF2439 Allow to export meta data for bundles,0
+HIVE11777 : implement an option to have single ETL strategy for multiple directories (Sergey Shelukhin reviewed by Prasanth Jayachandran),0
+Attempted to turn SVNErrorMessage into an Exception.,0
+Builderize the rest of it,0
+Integrated handling of durations. (http://tracker.deegree.org/deegreeservices/ticket/301).,0
+Use a single command and method for generating training data see issue #210,0
+enable import by name,0
+HIVE13945 : Decimal value is displayed as rounded when selecting where clause with that decimal value (Sergey Shelukhin reviewed by Ashutosh Chauhan),0
+declared static closeLoggers method in FluentLogger class,0
+Lots of ForumDisplay work.,0
+434055 : expose ProfileSelectionHandler.execute(shell projects) for JBT,0
+Mute the message task when the player has to solve a captcha,0
+Raise the minimum supported version of Gradle to 3.4,0
+Do not stream video with embedded subtitles not supported by renderer,0
+Handle multi failures. Closes #15,0
+XCOMMONS932: Grouped job with null path should be executed as non grouped,0
+Snapshot from conversion,0
+use standard tcp and udp writer for OpenTSDB,0
+be a little smarter about the restart if a timer is already running,0
+Bug 355341[10.7] TabFolder doesn't look native (selected item's text not inverted),0
+[DS93] Upgrade XMLUI to Cocoon 2.2,0
+Asserting more security policies on the outbound side,0
+DnD from geocatalog to toc tested and working,0
+OS based bundle assembler injection,0
+key tracking,0
+references,0
+prevent JEditorPane from loading images in HTML,0
+initial revisions,0
+Contribution is not State's subclass anymore,0
+[SPARK6955] Perform port retries at NettyBlockTransferService level,0
+Another intermediate step.,0
+Repo and models to support submission view columns.,0
+Get some of the drivefile API tests working,0
+refactor storyreporterbuilder usage to be justintime,1
+Refactor abstract component classes,1
+Refactored for more logical structure,1
+support for labels/break/continue refactored switch blocks,1
+Refactor data model to use better names,1
+refactor(history): make historic external task log tests more robust,1
+EMAILPLT70:  Some refactoring to support the DEMO service better,1
+ROO2928: Post 1.2.0.RC1 code refactor and clean up  changed ItdTypeDetailsBuilder.addMethod calls to use MethodMetadataBuilder objects rather than MethodMetadata variant to avoid the unecessary conversion from MethodMetdata to MethodMetdataBuilder which happens regardless,1
+Add module refactory to multiple small packages,1
+Refactoring to keep old signatures,1
+Refactored out the coloring. Work on the product configuration.,1
+Refactor to use pullshared module.,1
+ new analysis strip at the right of the text pane (errors and warnings)  fixed some bugs in the autocompletion (would not complete for only one item)  refactored the multiline tooltip used by the   tips   and analysis strip,1
+Refactor DateTimePrinter to take DateTimeFormatSymbols,1
+refactor,1
+Some refactoring of Check changed under and over to less and greater added value name fields for less and greater checks fixed failed method name reporting fixed bug in identifier check wrote unit tests for all Check methods.,1
+[PAXEXAM768] Java 8 refactoring,1
+Refactor ListGroups: Move code to format output into command class,1
+Monitoring of task status  Refactoring more tests fixing some bugs  more TODO,1
+[task #8] Refactor: extract common project property modification code into abstract template class.,1
+refactored code,1
+minor refactor to create marshalString helper method,1
+Database Refactor,1
+Minor further refactoring of Theory ParameterSupplier setup,1
+OPENNLP483: Refactor the DefaultTokenContextGenerator to make it easier to create a subclass,1
+added ability to generate/edit control file content  minor refactor  save auth details on lose focus event,1
+[MGN56] Refactor: delete redundant AbstractRedisHistoricalTimeSeriesSource and add appropiate methods to RedisSimulationSeriesSource,1
+made proper tests for each category + some refactoring,1
+refactor Edge,1
+[MIN] some refactorings,1
+included review comments and minor refactorings,1
+Restructure/refactor package hierarchy,1
+refactored XSLContentAssistProcessor,1
+works well save for a refactor,1
+core: Fixing/refactoring buildAndCheckDestStorageDomains,1
+Reflects changes made by RedDeer Refactor RequirementsRunner issue number 1275,1
+refactoring and cleaning up SES UI,1
+Refactoring: DesignElement mappings loading is done in Java without PLSQL,1
+completing the memory > buffered refactor,1
+some refactorings,1
+OperatorContext refactoring,1
+Lab 06_home Stage III & further refactoring.,1
+Player Event rescue and package refactor,1
+srm: Refactor representation of SURLs and paths,1
+Refactor XaLogicalLog to do read apply and write entry in separate code sections.,1
+Issue #36: refactoring of help command. Not there yet.,1
+Refactoring DropDownMenu/DropDownItem closes #9,1
+refactored method name,1
+Refactoring,1
+Refactored ChiIndexUtils to make it package private. Cleans up public API since it is only used by chi descriptor code. Updated all dependent classes. Moved test code (which needs to be filled in!) as well,1
+OPENEJB1076 Allow end users to use ciphered passwords in datasource configuration (openejb.xml). > Avoid code duplication > refactoring > Add a command line tool to use a PasswordCodec,1
+Refactoring to be match Camels API.,1
+Small refactoring.,1
+refactor sql parser.,1
+Timer service refactoring,1
+Some simple name refactoring,1
+Refactor and fix debug according to recent changes,1
+Refactored a lot of the other scanner stuff into the partitioner.scanners package and added SQL scanners from Chris Bradford,1
+refactor CensusDialog > AbstractDialog,1
+Complete refactor removing Google HTTP Client (#131),1
+refactor package op to operaton,1
+Minor code/package refactoring for EntityProvider structure,1
+Refactoring,1
+refactored fixed,1
+General refactoring and code tidying,1
+refactor out common codes from *APIs,1
+set refactoring,1
+Refactored away the core TypeStore dependency in M3,1
+Refactored EntityMetaDataFactory to EntityTypeFactory,1
+graph layout : refactoring (renamed some package and pucshed attribute value classes to values package),1
+small refactorings added hamcrestcollections like MiniApi moved common Expr types to querydslcore,1
+Refactor: Moving out a method,1
+Minor refactoring packagelevel javadoc pom updates,1
+refactor,1
+Refactor Header class,1
+Refactoring from Interface /  Impl package structure,1
+WIP Thrift refactoring:   Replace PageDefinitionMapping with ThriftToReflectionLookup,1
+Make mandatory parameters constructor arguments. Refactor ColorDialog into mvc classes.,1
+refactored methods,1
+refactored StockOrderTicket to separate UI code from other code,1
+Issue 101: refactor client examples,1
+Refactored messy UI setup into named methods renamed variables general cleanup for readability.,1
+gp:ConstructMode refactoring,1
+Fixing grammars after refactory from a couple months ago. Removing support to # single line comments. Fixing parsing of inline nested expressions.,1
+Refactoring in the Deployer class to use the java concurrent package,1
+Refactored Authentication constants so that they can be reused. Added Spring Security call to the alarm browser in the topology UI so that it only allows nonreadonly users to ack/clear alarms. Fixes bug SPC692.,1
+Refactoring to introduce new module,1
+More WAR work  primarily refactoring tests so they work with a context path,1
+Refactored person from group (RAVE729),1
+Refactoring and testing fix features,1
+Reverted some changes and refactored the builder to work with the changed API.,1
+REFACTOR: moved various Adapter<*SearchResult> into org.archive.wayback.resourceindex.adapters,1
+refactored cycle API added RenderInfo to provide standard set of available views for plugins changed the contenttype definition by using a mixin interface to add extensibility to the set of standard contenttypes refactored API according to these changes adapted the UI/REST component accordingly,1
+Significant refactoring of Security related classes.  See the package documentation for org.springframework.richclient.security for details.,1
+issue 71: added a possibility to generate a trivial PDF report; some refactoring and cleanup; updated Guava to 14.0 because of the Splitter.on slowness bug,1
+MAGNOLIA1586  minor refactoring,1
+[refactor] Improve names of integration tests for basic limitations of Tycho,1
+refactor the paginator at webshop page,1
+[PLAT1296] Refactor timeseries master; New database stage 8,1
+Refactor StaticTrackPainter,1
+refactoring,1
+Refactor LoggerOutputStream into two classes: LoggerOutputStream and LoggerFilterOutputStream. The old LoggerOutputStream is like the new LoggerFilterOutputStream which subclasses FilterOutputStream. The idea behind the new LoggerOutputStream is that it does not need to carry and write to another wrapped OutputStream. This parallels the recent changes to LoggerWriter with LoggerFilterWriter.,1
+refactored into two assemblies core and app,1
+refactor config,1
+Refactor for clarity,1
+Code refactoring JPAstore.,1
+JSON Refactor  move EJson into text.json package,1
+Refactoring ui outside of model,1
+#JC1185 Logging filter was refactored to more clear solution.,1
+refactor jsp code,1
+Refactor GetPrivateGroupsByUserId to new mapper design. (B07683),1
+refactor and rename tests to prepare for JAXBElements scanning tests,1
+refactored view related properties from Map into Viewport class,1
+Refactored: renamed multiplexers to replicators,1
+javadoc refactoring,1
+Refactored builders for supporting multi inputs and named outputs seamlessly,1
+Refactored classes to avoid that thread instances of invalid states can be created.,1
+Fix TXT content type detection + Refactoring,1
+Refactored model and fixed tests,1
+refactor some code in UISpaceMember,1
+getMLDataSet method refactored.,1
+[KARAF3051] Refactoring of features module (commands/MBean) to use Karaf 3.x syntax/wording,1
+refactor BundleStrings,1
+Refactored TransferEnvelopeReceiverList,1
+New feature:  implemented the first time cycle inquiries for all the cycles and the login warning  refactored the answers hierarchy classes,1
+REFACTORING Issue #10 Changed root package from org.blogspot to com.blogspot,1
+Fixed issue 219   https://jersey.dev.java.net/issues/show_bug.cgi?id219   Refactored com.sun.jersey.spi.container.servlet.ServletContainer to   inherit from HttpServlet.  Fixed issue 217   https://jersey.dev.java.net/issues/show_bug.cgi?id217   SpringServlet was failing when used as a filter.,1
+Refactor test of websocket examples.,1
+Feature #907 : fixing display attachments for validated suggestions (refactoring back Transaction mechanism introduced by Miguel to handled the finest as possible the JPA transaction into a service),1
+refactored methods names to readOld and readBolonha,1
+Refactor GenerateServiceMetadata,1
+Resolves Spec Issue 155: Refactor CacheEntryListenerDefinition to CacheEntryListenerConfiguration,1
+Big refactoring of ParsedResult: now split into ResultParser and ParsedResult classes per Christian's suggestion. This unifies the parsed results that are produced from various input simplifying client handling of different types.,1
+refactored ParameterizedMessage::recursiveDeepToString into smaller methods to enable inlining: after running a test with XX:+PrintCompilation XX:+UnlockDiagnosticVMOptions XX:+PrintInlining I found   ...ParameterizedMessage::recursiveDeepToString (836 bytes) hot method too big  .,1
+Refactoring,1
+Refactored list resources from a Network,1
+ComponentHibernateDaoTest refactored returned value in 'getDuplicatedFieldsFor' replaced onto empty list instead of null  and the service along with view changed accordingly,1
+name refactor TagAttr to TagAttribute,1
+Refactored object spawning,1
+[MOD] Repository management: refactorings,1
+Refactored,1
+Finished most of the remaining polling consumers.  Created a few new static utilities. Minor refactoring.,1
+Feature #8622: refactoring a little the server notification PUSH by SSE in order to handle rightly the user session expiration.,1
+Refactoring,1
+ongoing refactoring,1
+Made a refactoring of connections to master (multiple channels per client).,1
+Refactored JPA demos renamed all demos.,1
+refactored configuration and setup to test with build 4.1.8,1
+Refactored out introspection based toString() logic to the IntrospectionSupport class  Durable subscriptions are now eagerly loaded when a topic is created.  Fixed the *TransactionTest,1
+minor refactorings,1
+refactoring,1
+NXP5612 finish refactoring and reactivate tests,1
+XLC238 Service privileges checks refactored. Added methods for getting entities by id collections.,1
+Refactoring convert method in JarConverter.,1
+minor refactoring and code cleanup,1
+Directory tree refactor,1
+refactor for preject renaming,1
+Refactoring,1
+refactoring serviceclient to persistence,1
+Analyse: detection of Parameters (and related Type Parameters) refactored. Works in C# the same now as in Java.,1
+story #23 (optional states config item refactor),1
+refactoring behavior into the DOM,1
+IDE1663 refactoring pulled up methods to base class,1
+Refactor:  TextureData to handle Pixmap and Custom TextureType  TextureData consumeCompressedData to consumeCustomData  GLTexture function to uploadImageData to custom mipmap level,1
+final test and code refactoring,1
+Introduced Database class as a facade to db test code Various renamed and minor refactorings,1
+Refactored to use conversation scope.,1
+bug; 3123689; iterate() field mapping type is missing; bug; 2856035; mapping primitive collections with iterate feature; refactoring; internal builder api changes;,1
+Refactoring. Introduced a plugin interface. 2 advantages: * both the plugin and the plugin API can implement it and thus don't have to copy paste the Javadoc (except here the mailsender plugin was not implemented following the rule that the API must delegate its calls to the plugin proper) * allows to clearly see what's the plugin API and even create links to it in the documentation.,1
+Refactoring,1
+beta federation some refactor,1
+Make new unit tests compatible with all targets; refactor Generator to take cmdline arg or current dir. rename some methods. add some output.,1
+massive refactoring for better names added spring test for archives,1
+Refactor code to prepare for custom label attributes. #39,1
+refactored,1
+Minor smoke test refactoring,1
+1. Minor refactoring 2. Added QuickSelectTest 3. TODO Fix quick select,1
+Updated to OptaPlanner 6.0.1.  Refactored source data to use separate teams venues and rankings files.,1
+refactored error on current transaction,1
+Refactor of some test method names.,1
+Refactored classes to util package.,1
+Refactor UI clustering test add test for view context,1
+JBRULES720 Clips Parser Refactored functions so all functions are now added by the PackageBuilder into the RuleBase All functions now live in the MAIN namespace and the factory is always retrieved from there.,1
+further Grade refactoring (see Enrolment.getGradesetGradesetGradeValue)  now implements ICurriculum  getCurriculum  EctsCredits and Weight for curriculum calculus must not take into account isExtraCurricular or isPropaedeutic,1
+suspend/resume tests and test refactoring,1
+Rehauled and refactored the InputHandler! Ok time for bed now.,1
+RF12900: refactored org.richfaces.util.core.base64 to org.richfaces.base64,1
+refactoring: rename method,1
+Renamed the tab class and reformatted plugin.xml.,1
+SPR 4359 renamed 'concurrent' namespace to 'task',1
+cluster renamings and parameter fixes,1
+Rename ResultSetMapper to ResultSetScanner,1
+Renamed Oracle tests to comform with the other Unit tests that require a DB.,1
+[MOD] XQuery: iterative evaluation of util:to bytes() [MOD] XQuery: Value.finish() renamed to .value() [MOD] XQuery: RangerIter removed and merged with RangeSeq,1
+Updates SaveSelectionSearchResultAction to allow renaming an existing collection when no items are selected.,1
+Rename fileter/CSRF/config/Interceptor.java to src/filter/CSRF/config/Interceptor.java,1
+Rename ExtendedHierarchicKey to DeterministicKey. Add annotations and rewrite a bit of code to satisfy static analysis.,1
+clarified the ODE package by breaking in into several sub packages and renaming classes. This also prepares future work for non stiff solvers.,1
+Renamed StandaloneDeliveryCmd  > S...RunCmd,1
+rename MR class,1
+renaming and a comment,1
+Renamed GLBenchmark to GLProfiler.,1
+isEnvelope renamed,1
+Adding a volatility cube instrument provider and renaming some files,1
+renamed variable codeChanged,1
+Added missing changes of renaming quitted to quit.,1
+Renamed DeployApkMojo to DeployMojo.,1
+core: Rename   canDoAction   to   validate  ,1
+OPS: rename a couple Condition classes,1
+rename files starting with cal10n as CAL10N,1
+Rename ConnectionStrategy into KeepAliveStrategy,1
+Rename ClaferObjective to ClaferOptimizer.,1
+core: rename fields/setters/getters in VdsStatistics,1
+start renaming things from GV/ghostview to pdf,1
+[PLAT 1517] Rename Analytics Util classes to end with Utils,1
+Rename to FaultListener to make it sound a bit more flexible in what it can do.,1
+#198: Loggers renamed to JcabiLoggers,1
+CSPACE 5012: Renamed method for generality; refined and added FIXME comments.,1
+class renamed TclTodoPrefInitializer  > TclCorePrefInitializer,1
+Repackaged renamed and reworking DatabaseManager,1
+Renames getValue/putValue in State to getByPath/putByPath so that it's more clear exactly what it does.,1
+TFJ 458 renaming ImageUploader to ImageUpload renaming TweetPhoto to Plixi as they have changed their service name.,1
+Issue #51 Rename merge option to append Issue #59 Rename Agent Parameter 'file' to 'destfile',1
+pixelserver: page* classes renamed,1
+CLEREZZA 412: commit by rename utility,1
+renamed preference manager group module to preference manager synchronize   rjrjr,1
+Renamed method to avoid ambiguous calls,1
+core: rename method RunAdAction to lowercase in LdapBroker,1
+Renaming to match the test cases pattern.,1
+added the view rename method. onItemChange  > onItemRenamed for consistency,1
+PLANNER 746 Rename locateWorkingObject() to lookUpWorkingObject() relocate() to rebase() and Locator to LookUpManager,1
+Added 12 Clash Pack promos 5 judge promos 2 upcoming FNM promos renamed MerfolkToken to MerfolkWizardToken added collector's number that were missing for ORI in mtg cards data.txt added other various cards.,1
+renamed Transform and ValueDistribution accordingly.,1
+Rename Drools Planner to OptaPlanner: package org.optaplanner.core,1
+[AESH 138] renamed ParserBuilder to CommandLineParserBuilder,1
+renamed BTS to ITS.,1
+Issue 440: renamed vsphere >vi made sure all sandbox modules compile,1
+http://code.google.com/p/mybatis/issues/detail?id 152 : Rename MapperScanner to MapperScannerPostProcessor,1
+TYRUS 232: Renamed Connection to Writer and moved it to SPI,1
+LOG4J2 1010 renamed ThreadContextDataInjector inner implementation classes,1
+Rename GuardedBy to GuardedByChecker to avoid using the same simple name as the annotation.               Created by MOE: http://code.google.com/p/moe java MOE_MIGRATED_REVID 76825033,1
+CLEREZZA 412: commit by rename utility,1
+Perform rename from RestQueryCreator to RestQueryExecutor.,1
+Rename encapsulator to quote char.,1
+rename parameters for readability,1
+threads package renamed to concurrent.,1
+Renamed stringTo<Type> metods to to<Type>. The stringToInt methods have been deprecated.,1
+MAGNOLIA 2542    Renamed UUIDLink to link and cleaned up the implementation.   Cleanup of methods in LinkUtil   Simplified link browser handling and made LinkTransformerManager configurable.,1
+OGM 208 Renaming MappingService into OptionsService,1

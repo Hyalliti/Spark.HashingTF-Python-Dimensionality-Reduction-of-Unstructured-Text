@@ -1,0 +1,19 @@
+Feature hashing completado :v yo sholito lo hice :3 en do dia :D , toy orgulloso de mi, este dia solo jugue
+dos partidas de dota y lo acabé... fue pila de divertido en verdad, y aprendía bastante, me siento muy en confianza
+con python ahora, fue como un intensivo de Python en verdad.
+
+from pyspark.mllib.feature import HashingTF,IDFModel,IDF        #  Importando las clases y librerias a usar
+import pyspark
+import sys
+with open('datasetTEXT.txt', 'r') as file:              # with this POWERFUL LINES OF CODE I'LL HAVE MY STRING >:D
+    dataset = file.read().replace('\n', '')    
+print(dataset)
+HTF = pyspark.mllib.feature.HashingTF(1000000)
+HashedMensajes = HTF.transform(dataset)
+print(HashedMensajes)
+
+No solo eso , como puedes ver arriba logré hacer ese código en MUY POCAS LINEAS, si le quitas los prints son 6 lineas de codigo xD
+
+Memory efficient dimensionality reduction of highly diverse and featured datasets can be achieved offline, 
+by the use of Hashing methods for further analysis of unstructured text such as code from web applications.  
+

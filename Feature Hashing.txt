@@ -1,0 +1,171 @@
+CORRECCCION EL WORK FLOW ES AL REVES, PRIMERO FEATURE HASHING, LUEGO CATEGORIZACION
+
+Para confirmar que no se podía clasificar utilicé Keras y Tensorflow para entrenar una red neuronal que haga 
+la clasificación,  pero al momento de pasar las strings a ints no podía porque eran demasiado grandes. 
+
+Así que se devuelve al feature hashing para reducir la dimensionalidad.
+
+No se puede decidir si el texto vale la pena o no de analizar si no se puede procesar, no se puede procesar si es muy grande, 
+y no se hace más pequeño sin reducir la dimensionalidad.
+
+Osea que necesariamente el feature hashing va primero y luego la clasificación. Primero comprime y luego aprende.
+
+Pero... si se hace Feature Hashing se tienen un monton de palabras por feature, cómo accedo a los datos importantes ? 
+cómo lo revierto?!
+
+A. Feature Hashing the most desirable characteristics
+Creating N features with 2^n unique words
+1. Understand Feature Hashing:
+https://www.youtube.com/watch?v=t3lDIbTYKqM
+https://www.youtube.com/watch?v=SLqKepl9rEo
+Impact by collision is low given big sized bags, HashingTF vectorizes 
+text into number sequences of features.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+CODIGO V1
+-----------------------------------------------------------------------------------------------------------------------------
+from pyspark.mllib.feature import HashingTF,IDFModel,IDF        #  Importando las clases y librerias a usar
+import pyspark
+import numpy as np
+import pandas as pd
+import sys
+
+dataset = pd.read_txt('dataset.txt')                            # Importa el CSV usando PANDAS 
+dataset2 = pd.DataFrame(dataset, columns=['Message', 'isRefactoring'], dtype=str)       #Conversion a strings de todo lo que contiene el dataset
+texto = dataset2.loc[:,['Message']]                             # Permite leer sólo la columna de isRefactoring
+print(texto)
+
+HTF = pyspark.mllib.feature.HashingTF(15000)
+HashedMensajes = HTF.transform(texto)
+print(HashedMensajes)
+
+#HTF = pyspark.ml.feature.HashingTF(100000)
+#HashedMensajes = HTF.transform(texto)
+#print(HashedMensajes)
+
+# ste archivo de paiton deberá importar el csv del feature hash y 
+# Se necesita una librería llamada findspark para hallar a pyspark porque el bb 
+# no se encuentra en el sys.path . O , seguir este tutorial:https://sigdelta.com/blog/how-to-install-pyspark-locally/
+
+# Extenso y engorroso proceso :v
+
+# lo que funcionó: dataset2 = pd.DataFrame(dataset, columns=['Message', 'isRefactoring'], dtype=str)       #Conversion a strings de todo lo que contiene el dataset
+# https://stackabuse.com/beginners-tutorial-on-the-pandas-python-library/
+
+# Error 1, HashingTF recibe strings, no objetos
+# Maps a sequence of terms to their term frequencies using the hashing trick.
+#   
+#   
+#   
+
+
+# Representa un IDF, util para transformar cosas a vectores de frecuencia
+#   pyspark.mllib.feature.IDFModel.transform()
+
+# Se debe importar ESPECIFICAMENTE de la mini libreria mllib los metodos a usar....
+#from pyspark.mllib.feature import HashingTF,IDFModel,IDF
+#https://spark.apache.org/docs/1.2.2/api/python/pyspark.mllib.html#module-pyspark.mllib.feature
+#https://stackoverflow.com/questions/39535447/attributeerror-dataframe-object-has-no-attribute-map
+
+
+#texto = (dataset.loc[:,1])         # Prueba de labels : print(labels.head())
+
+
+#texto.to_json()                                
+#   texto['Messages'] = texto['Messages'].astype('|S') 
+
+# which will by default set the length to the max len it encounters
+# https://stackoverflow.com/questions/33957720/how-to-convert-column-with-dtype-as-object-to-string-in-pandas-dataframe
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------ PREVIO WORKFLOW
+A. Categorizing full text as YES or NON desirable for analysis  
+(Not very viable, if accuracy is 80%, 20% of datawill be lost, then feature hashing will also omit unclassifiable data)
+Supervised Learning Model for text analysis -> sentiment analysis?
+1. Run Sentiment Analysis of the text file
+	1. Prepare the text file using Excel Power Query, creating a training file based on 10% of the data.
+	2. do the stuff wit the training file
+	
+
+
+https://www.youtube.com/watch?v=qTyj2R-wcks
+https://monkeylearn.com/blog/sentiment-analysis-with-python/
+
+2. If the Sentiment analysis probes a positive result, output all the text to a file with csv o tsv separation.
+https://riptutorial.com/python/example/26946/writing-a-tsv-file
+
+
+B. Feature Hashing the most desirable characteristics
+Creating N features with 2^n unique words
+1. Find unique words by obtaining the "n" of 2^n neccesary for the feature hashing (Optimizing size)
+https://stackoverflow.com/questions/53271669/count-unique-words-in-a-text-file-python
+2. Implement feature Hashing
+https://www.youtube.com/watch?v=z9irRiTdDoE
+
+
+
+
+
+
+
+
+
+................................................. INTENTOS
+#	1. Prepare the text file using Excel Power Query, creating a training file based on 10% of the data.
+
+#   2. do the stuff wit the training file
+
+# What we wanna do is a binary classifier, we'll either use Logistic Regression,Binomial Naive Bayes or a Neural Network
+# First one to work successfully goes on to the next step....
+
+# First we open the csv:
+import pandas as pd
+import tensorflow as tf
+from tensorflow import keras
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+df = pd.read_csv('training_dataset.csv')
+#   print(dataset.head())
+# Con las columnas mostradas se procede a separar entre label y datos
+properties = list(df.columns.values)
+properties.remove('isRefactoring')
+#   print(properties)
+texto_training = df[properties]
+tags_training = df['isRefactoring']
+#  En el código anterior: 
+#  Se ha dividido en las dos columnas iniciales de isRefactoring y Message, 
+#  columnas correspondientes al label y al dato en cuestion. a continuacion se procede a hacer lo mismo utilizando el archivo completo como modelo de prueba.
+MF = pd.read_csv('dataset.csv')
+print(MF.head())
+
+properties = list(MF.columns.values)
+properties.remove('isRefactoring')
+texto_prueba = MF[properties]
+tags_prueba = MF['isRefactoring']
+
+# En el código anterior : Se realiza la misma división para el texto de prueba
+
+
+
